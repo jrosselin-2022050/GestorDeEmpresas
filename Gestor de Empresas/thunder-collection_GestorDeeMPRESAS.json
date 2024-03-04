@@ -1,0 +1,381 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorDeeMPRESAS",
+    "dateExported": "2024-03-04T02:21:28.414Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "ffce02cd-d62d-4808-981a-2ff1a00fab11",
+            "name": "Categorias",
+            "containerId": "",
+            "created": "2024-03-03T01:44:33.688Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "05bb9500-43c2-4765-9f3e-e38d120aa412",
+            "name": "Usuarios",
+            "containerId": "",
+            "created": "2024-03-03T06:54:52.160Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "c0142e9c-1672-4df9-acd3-6584cc0daafa",
+            "name": "Empresas",
+            "containerId": "",
+            "created": "2024-03-03T23:44:55.676Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5d92dfa0-306e-4cfd-a6d6-51fc197db016",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "ffce02cd-d62d-4808-981a-2ff1a00fab11",
+            "name": "nuevaCategoria",
+            "url": "localhost:2500/nuevaCategoria",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T04:03:46.547Z",
+            "modified": "2024-03-03T04:35:05.632Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Deportivas"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "Empresas de venta de articulos deportivos"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "dfa3d900-21a6-436c-9548-e876011b7f89",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "ffce02cd-d62d-4808-981a-2ff1a00fab11",
+            "name": "eeditarCategoria",
+            "url": "localhost:2500/editarCategoria/65e3f6fe83d8fcc383c916ad?nombre=Deporte&descripcion=empresas de venta de articulos deportivos",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-03T04:39:39.726Z",
+            "modified": "2024-03-03T04:46:17.787Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "nombre",
+                    "value": "Deporte",
+                    "isPath": false
+                },
+                {
+                    "name": "descripcion",
+                    "value": "empresas de venta de articulos deportivos",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "92dc7b9b-035c-4a6b-b88c-073dfdee5e82",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "ffce02cd-d62d-4808-981a-2ff1a00fab11",
+            "name": "eliminarCategoria",
+            "url": "localhost:2500/eliminarCategoria/65e3fdf952c46e4eb2992f56",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-03T04:47:31.925Z",
+            "modified": "2024-03-03T05:20:19.032Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a19ff954-d6d3-4eb5-bd4c-c8d040c2c64a",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "ffce02cd-d62d-4808-981a-2ff1a00fab11",
+            "name": "listarCategorias",
+            "url": "localhost:2500/verCategorias",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-03T05:22:24.798Z",
+            "modified": "2024-03-03T05:22:48.500Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e189f5a4-db6c-42c6-a82a-9711f405f32d",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "05bb9500-43c2-4765-9f3e-e38d120aa412",
+            "name": "registrarUsuario",
+            "url": "localhost:2500/registro",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-03T07:01:10.510Z",
+            "modified": "2024-03-03T07:25:42.761Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "empresa",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Joshua"
+                    },
+                    {
+                        "name": "apellido",
+                        "value": "Rosselin"
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "jrosselin"
+                    },
+                    {
+                        "name": "correo",
+                        "value": "jrosselin-2022050@kinal"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Megacreeper1$"
+                    },
+                    {
+                        "name": "empresa",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a14b1385-0223-47cb-b27d-8d0d7f24759d",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "05bb9500-43c2-4765-9f3e-e38d120aa412",
+            "name": "Login",
+            "url": "localhost:2500/login",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-03T07:41:28.799Z",
+            "modified": "2024-03-04T00:48:08.203Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario",
+                        "value": "ERosselin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Megacreeper1$"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ce068ac-b834-41bd-a149-41395ddd433c",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "05bb9500-43c2-4765-9f3e-e38d120aa412",
+            "name": "editarUsuario",
+            "url": "localhost:2500/EditarPerfil/65e4293753a33e9b319dd229",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-03T14:40:51.285Z",
+            "modified": "2024-03-03T14:42:56.284Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Elijhab"
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "ERosselin"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9a3dc4db-04b9-4222-92b2-f07d1b521aff",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "05bb9500-43c2-4765-9f3e-e38d120aa412",
+            "name": "eliminarUsuario",
+            "url": "localhost:2500/Eliminar/65e4a3aed769baa7703cdcb6",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-03-03T16:18:27.423Z",
+            "modified": "2024-03-03T16:26:53.850Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token2}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0d5393b2-229f-4bc0-bdde-424d041dfdfe",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "c0142e9c-1672-4df9-acd3-6584cc0daafa",
+            "name": "AgregarEmpresa",
+            "url": "localhost:2500/agregarEmpresa/65e4293753a33e9b319dd229",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-03T23:45:03.150Z",
+            "modified": "2024-03-04T00:02:24.446Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "tecnoman"
+                    },
+                    {
+                        "name": "propetario",
+                        "value": "65e4293753a33e9b319dd229",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "65e3f6fe83d8fcc383c916ad"
+                    },
+                    {
+                        "name": "trayectoria",
+                        "value": "10 años operando"
+                    },
+                    {
+                        "name": "impacto",
+                        "value": "8"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "604351b2-6061-4c5c-a708-ea17646f115b",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "c0142e9c-1672-4df9-acd3-6584cc0daafa",
+            "name": "actualizarEmpresa",
+            "url": "localhost:2500/editarEmpresa/65e50f905fcc25a47454f7af",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-04T00:04:38.689Z",
+            "modified": "2024-03-04T00:08:11.459Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "TecnoLogi"
+                    },
+                    {
+                        "name": "trayectoria",
+                        "value": "5 años de actividad"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe5a0e7c-1c46-4a93-a517-e556495a1e53",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "c0142e9c-1672-4df9-acd3-6584cc0daafa",
+            "name": "ListarEmpresas",
+            "url": "localhost:2500/listarEmpresa",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-04T00:08:44.380Z",
+            "modified": "2024-03-04T00:09:00.862Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "357c32e7-6ca3-4ec4-ad16-7190ff670e09",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "c0142e9c-1672-4df9-acd3-6584cc0daafa",
+            "name": "BuscarEmpresasFiltros",
+            "url": "localhost:2500/buscarEmpresaFiltro",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-04T00:14:05.179Z",
+            "modified": "2024-03-04T00:26:32.517Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "1",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0df14623-e9ac-4db5-9170-3f2eb4be7aa0",
+            "colId": "d06c6509-7795-418c-b973-9710e501eee6",
+            "containerId": "c0142e9c-1672-4df9-acd3-6584cc0daafa",
+            "name": "BuscarEmpresa",
+            "url": "localhost:2500/buscarEmpresa/65e50f905fcc25a47454f7af",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-03-04T00:45:20.759Z",
+            "modified": "2024-03-04T00:48:44.873Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "{{token}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
